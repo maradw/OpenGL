@@ -28,31 +28,7 @@ void Example1::Render()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
-	/*DrawPoint();
-	DrawLine();
-	DrawColoredLine();
-	DrawLineChain();
-	XY();
-	Grid();
-	XYZ();
-	*/
-	//---------------------
-
-	/*DrawCube();
-	DrawIcosahedron();
-	DrawTetrahedron();
-	DrawOctahedron();
-	DrawDodecahedron();
-	DrawPiramid();
-	DrawTruncatedPyramid();
-	DrawPrism();
-	DrawOrthohedron();
-	DrawParallelepiped();
-	DrawSphere();
-	DrawCylinder();
-	DrawCone();
-	DrawFrustum();*/
-	//DrawPolyhedron();
+	
 }
 
 void Example1::DrawPolyhedron()

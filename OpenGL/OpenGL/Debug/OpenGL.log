@@ -1,2 +1,3 @@
-﻿  Example2.cpp
-  OpenGL.vcxproj -> C:\Users\Maria\Downloads\maradw\Openglxd\OpenGL\Debug\OpenGL.exe
+﻿  Example4.cpp
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example4.cpp(100,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  OpenGL.vcxproj -> C:\Users\teamo\Desktop\a\OpenGL\OpenGL\Debug\OpenGL.exe

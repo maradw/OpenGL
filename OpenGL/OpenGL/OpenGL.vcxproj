@@ -147,6 +147,7 @@
     <ClCompile Include="Example.cpp" />
     <ClCompile Include="Example1.cpp" />
     <ClCompile Include="Example2.cpp" />
+    <ClCompile Include="Example4.cpp" />
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="Polígono.cpp" />
     <ClCompile Include="Punto3D.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Example.h" />
     <ClInclude Include="Example1.h" />
     <ClInclude Include="Example2.h" />
+    <ClInclude Include="Example4.h" />
     <ClInclude Include="IncludeGL.h" />
     <ClInclude Include="Polígono.h" />
     <ClInclude Include="Punto3D.h" />
