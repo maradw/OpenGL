@@ -37,6 +37,12 @@
     <Filter Include="Archivos de origen\Polígono">
       <UniqueIdentifier>{c3f3072a-ac3b-4726-8454-a5d47374a65c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Lights">
+      <UniqueIdentifier>{b232e722-61f4-4be5-b1f3-a34607892d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Lights">
+      <UniqueIdentifier>{fafc2611-d4c7-4494-a30e-bc2bb1613293}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp">
@@ -59,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="Example4.cpp">
       <Filter>Archivos de origen\Example</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights.cpp">
+      <Filter>Archivos de origen\Lights</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Example4.h">
       <Filter>Archivos de encabezado\Example</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights.h">
+      <Filter>Archivos de encabezado\Lights</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

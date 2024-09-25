@@ -148,6 +148,7 @@
     <ClCompile Include="Example1.cpp" />
     <ClCompile Include="Example2.cpp" />
     <ClCompile Include="Example4.cpp" />
+    <ClCompile Include="Lights.cpp" />
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="Polígono.cpp" />
     <ClCompile Include="Punto3D.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Example2.h" />
     <ClInclude Include="Example4.h" />
     <ClInclude Include="IncludeGL.h" />
+    <ClInclude Include="Lights.h" />
     <ClInclude Include="Polígono.h" />
     <ClInclude Include="Punto3D.h" />
     <ClInclude Include="resource.h" />
