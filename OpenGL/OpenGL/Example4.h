@@ -19,7 +19,7 @@ public:
 #pragma once
 #include "Example.h"
 class Example4 :
-	public Example
+public Example
 {
 public:
 	Example4();

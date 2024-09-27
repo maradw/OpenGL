@@ -8,14 +8,14 @@ Example4::Example4()
 }
 void Example4::init()
 {
-    PointLight pointLight;
+   // PointLight pointLight;
 
     
-    pointLight.init();
+    //pointLight.init();
 
 
 }
-void Example4::xd() {
+/*void Example4::xd() {
     PointLight pointLight;
 
     // Inicializar la escena (habilitar iluminación global)
@@ -29,7 +29,7 @@ void Example4::xd() {
     glEnable(GL_DEPTH_TEST);
     gluLookAt(5, 5, 5, 0, 0, 0, 0, 1, 0);
     glMatrixMode(GL_MODELVIEW);
-}
+}*/
 void Example4::Render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

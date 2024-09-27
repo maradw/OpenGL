@@ -49,6 +49,9 @@
     <Filter Include="Archivos de origen\Lights\Types">
       <UniqueIdentifier>{89d83294-ce4f-4813-b8db-77fe3353ecb9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\textures">
+      <UniqueIdentifier>{9eb43c01-cd21-4ebc-8a00-dc0bf64efaf2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp">
@@ -89,6 +92,15 @@
     </ClCompile>
     <ClCompile Include="SpotLight.cpp">
       <Filter>Archivos de origen\Lights\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Example5.cpp">
+      <Filter>Archivos de origen\Example</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoader.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="BMPTextureLoader.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +145,15 @@
     </ClInclude>
     <ClInclude Include="DirectionLight.h">
       <Filter>Archivos de encabezado\Lights\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Example5.h">
+      <Filter>Archivos de encabezado\Example</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="BMPTextureLoader.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
