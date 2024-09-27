@@ -43,6 +43,12 @@
     <Filter Include="Archivos de origen\Lights">
       <UniqueIdentifier>{fafc2611-d4c7-4494-a30e-bc2bb1613293}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Lights\Types">
+      <UniqueIdentifier>{230143fe-c4c3-4b6c-a4ac-b0ae58963a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Lights\Types">
+      <UniqueIdentifier>{89d83294-ce4f-4813-b8db-77fe3353ecb9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp">
@@ -69,14 +75,20 @@
     <ClCompile Include="Lights.cpp">
       <Filter>Archivos de origen\Lights</Filter>
     </ClCompile>
-    <ClCompile Include="Example3.cpp">
-      <Filter>Archivos de origen\Example</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Vector3.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionLight.cpp">
+      <Filter>Archivos de origen\Lights\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Archivos de origen\Lights\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLight.cpp">
+      <Filter>Archivos de origen\Lights\Types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,14 +119,20 @@
     <ClInclude Include="Lights.h">
       <Filter>Archivos de encabezado\Lights</Filter>
     </ClInclude>
-    <ClInclude Include="Example3.h">
-      <Filter>Archivos de encabezado\Example</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Archivos de encabezado\Lights\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Archivos de encabezado\Lights\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionLight.h">
+      <Filter>Archivos de encabezado\Lights\Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

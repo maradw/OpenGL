@@ -4,6 +4,7 @@
 #include <cmath>
 Example3::Example3()
 {
+
 }
 // Posición inicial de la cámara
 float cameraX = 0.0f, cameraY = 1.5f, cameraZ = 5.0f;
@@ -21,10 +22,8 @@ float speed = 0.1f;
 // Última posición del mouse
 int lastX, lastY;
 bool firstMouse = true;
-Example3::Example3()
-{
-}
 
+/*
 void init() {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glEnable(GL_DEPTH_TEST);
@@ -144,3 +143,4 @@ int main(int argc, char** argv) {
     glutMainLoop();
     return 0;
 }
+*/

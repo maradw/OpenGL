@@ -28,10 +28,11 @@ public:
 
 	virtual void KeyboardFunc(unsigned char key, int X, int Y)override;
 	virtual void Idle()override;
-	void ConfigurarMaterial();
+	void SetMaterial();
 	void ConfigurarLuzDireccional();
-	void ConfigurarLuzPuntual();
+	void SetPointLight();
 	void ConfigurarLuzSpotLight();
 	void DrawPlane();
+
 };
 
