@@ -1,5 +1,58 @@
 ﻿  BMPTextureLoader.cpp
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(5,9): error C3646: 'texture': especificador de invalidación desconocido
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(5,16): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,17): error C3646: 'LoadParameter': especificador de invalidación desconocido
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,31): error C2059: error de sintaxis: ')'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,32): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\BMPTextureLoader.h(9,20): error C3668: 'BMPTextureLoader::LoadParameter': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\BMPTextureLoader.cpp(60,27): error C2039: "LoadParameter": no es un miembro de "TextureLoader"
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(2): message : vea la declaración de 'TextureLoader'
+  Camera.cpp
+  DirectionLight.cpp
+  Example.cpp
+  Example1.cpp
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(84,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(116,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(149,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(158,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(167,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(176,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(185,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(194,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(207,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(216,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(234,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(261,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(273,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(346,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(364,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(370,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\Example1.cpp(448,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Example2.cpp
+  Example3.cpp
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\glew2\glew-2.1.0\include\GL\glew.h(85,1): fatal error C1189: #error:  gl.h included before glew.h
+  Example4.cpp
   Example5.cpp
+  Lights.cpp
+  OpenGL.cpp
+  PointLight.cpp
+  Polígono.cpp
+  Punto3D.cpp
+  SpotLight.cpp
   TextureLoader.cpp
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(5,9): error C3646: 'texture': especificador de invalidación desconocido
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(5,16): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,17): error C3646: 'LoadParameter': especificador de invalidación desconocido
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,31): error C2059: error de sintaxis: ')'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(10,32): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(5,5): error C2065: 'texture': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(10,23): error C2039: "LoadParameter": no es un miembro de "TextureLoader"
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.h(2): message : vea la declaración de 'TextureLoader'
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(12,23): error C2065: 'texture': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(13,34): error C2065: 'texture': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(20,39): error C2065: 'width': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(20,46): error C2065: 'height': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(20,83): error C2065: 'data': identificador no declarado
+C:\Users\teamo\Desktop\a\OpenGL\OpenGL\OpenGL\TextureLoader.cpp(27,12): error C2065: 'texture': identificador no declarado
+  Vector3.cpp
   Generando código...
-  OpenGL.vcxproj -> C:\Users\teamo\Desktop\a\OpenGL\OpenGL\Debug\OpenGL.exe

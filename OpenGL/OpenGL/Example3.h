@@ -1,8 +1,9 @@
 #pragma once
 #include "Example.h"
-class Example3 :
-    public Example
+#include "Camera.h"
+class Example3 : public Example
 {
+	Camera* camera;
 public:
 	Example3();
 

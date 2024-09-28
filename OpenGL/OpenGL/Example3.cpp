@@ -1,11 +1,29 @@
 #include "Example3.h"
 #include <GL/glut.h>
 #include <iostream>
-#include <cmath>
+#include "IncludeGL.h"
+
+//#include <iostream>
+//#include <cmath>
 Example3::Example3()
 {
+    camera = new Camera();
+}
+void Example3::init()
+{
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClearDepth(1.0);
+    camera->Init();
+    gluLookAt(5, 5, 5, 0, 0, 0, 0, 1, 0);
+    glMatrixMode(GL_MODELVIEW);
+}
+void Example3::Render()
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    DrawAxis(80);
 
 }
+/*
 // Posición inicial de la cámara
 float cameraX = 0.0f, cameraY = 1.5f, cameraZ = 5.0f;
 float centerX = 0.0f, centerY = 1.5f, centerZ = 0.0f; // Punto al que mira la cámara
@@ -23,7 +41,7 @@ float speed = 0.1f;
 int lastX, lastY;
 bool firstMouse = true;
 
-/*
+
 void init() {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glEnable(GL_DEPTH_TEST);
@@ -34,7 +52,7 @@ void handleKeypress(unsigned char key, int x, int y) {
     // Dirección de la cámara
     float cameraSpeed = speed;
 
-    float frontX = cosf(yaw * M_PI / 180.0f) * cosf(pitch * M_PI / 180.0f);
+    float frontX = cosf(yaw *M_PI / 180.0f) * cosf(pitch * M_PI / 180.0f);
     float frontY = sinf(pitch * M_PI / 180.0f);
     float frontZ = sinf(yaw * M_PI / 180.0f) * cosf(pitch * M_PI / 180.0f);
 
@@ -144,3 +162,4 @@ int main(int argc, char** argv) {
     return 0;
 }
 */
+
