@@ -1,6 +1,2 @@
 ﻿  Example3.cpp
-  Example4.cpp
-C:\Users\AMD Ryzen\Desktop\a\OpenGL\OpenGL\OpenGL\Example4.cpp(36,16): error C2660: 'Example::DrawAxis': la función no acepta 1 argumentos
-C:\Users\AMD Ryzen\Desktop\a\OpenGL\OpenGL\OpenGL\Example.h(13,7): message : vea la declaración de 'Example::DrawAxis'
-  OpenGL.cpp
-  Generando código...
+  OpenGL.vcxproj -> C:\Users\AMD Ryzen\Desktop\a\OpenGL\OpenGL\Debug\OpenGL.exe

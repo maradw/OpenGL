@@ -146,9 +146,6 @@
     <ClInclude Include="DirectionLight.h">
       <Filter>Archivos de encabezado\Lights\Types</Filter>
     </ClInclude>
-    <ClInclude Include="Example5.h">
-      <Filter>Archivos de encabezado\Example</Filter>
-    </ClInclude>
     <ClInclude Include="TextureLoader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -166,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>Archivos de encabezado\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Example5.h">
+      <Filter>Archivos de encabezado\Example</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

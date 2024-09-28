@@ -1,9 +1,11 @@
 #pragma once
 #include "Example.h"
 #include "Camera.h"
+#include "Polígono.h"
 class Example3 : public Example
 {
 	Camera* camera;
+	Polígono* polygon;
 public:
 	Example3();
 
@@ -14,10 +16,7 @@ public:
 	
 	virtual void Idle()override;
 
-	void DrawPoint();
-	void XY();
-	void Grid();
-	void DrawLine();
+	
 };
 
 

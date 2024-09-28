@@ -33,7 +33,7 @@ void Example4::init()
 void Example4::Render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    DrawAxis(50);
+    DrawAxis(50,2);
     // Configurar la luz y el material antes de dibujar
 
     SetPointLight();

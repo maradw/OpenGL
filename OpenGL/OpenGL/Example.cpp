@@ -9,54 +9,45 @@ Example::Example()
 void Example::DrawAxis(GLfloat distance, GLfloat axisWidth)
 {
 	glLineWidth(axisWidth);
-	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glBegin(GL_LINES);
-
 	// Eje X
 	// Parte positiva (color rojo)
 	glColor3f(1.0f, 0.0f, 0.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(distance, 0.0f, 0.0f); // Extremo positivo
-
+	glVertex3f(0.0f, 0.0f, 0.0f);   
+	glVertex3f(distance, 0.0f, 0.0f); 
 	// Parte negativa (color cian)
 	glColor3f(0.0f, 1.0f, 1.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(-distance, 0.0f, 0.0f); // Extremo negativo
-
+	glVertex3f(0.0f, 0.0f, 0.0f);   
+	glVertex3f(-distance, 0.0f, 0.0f);
 	// Eje Y
 	// Parte positiva (color verde)
 	glColor3f(0.0f, 1.0f, 0.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(0.0f, distance, 0.0f); // Extremo positivo
-
+	glVertex3f(0.0f, 0.0f, 0.0f);   
+	glVertex3f(0.0f, distance, 0.0f);
 	// Parte negativa (color morado)
 	glColor3f(1.0f, 0.0f, 1.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(0.0f, -distance, 0.0f); // Extremo negativo
-
+	glVertex3f(0.0f, 0.0f, 0.0f);  
+	glVertex3f(0.0f, -distance, 0.0f);
 	// Eje Z
 	// Parte positiva (color azul)
 	glColor3f(0.0f, 0.0f, 1.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(0.0f, 0.0f, distance); // Extremo positivo
-
+	glVertex3f(0.0f, 0.0f, 0.0f);  
+	glVertex3f(0.0f, 0.0f, distance); 
 	// Parte negativa (color amarillo)
 	glColor3f(1.0f, 1.0f, 0.0f);
-	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
-	glVertex3f(0.0f, 0.0f, -distance); // Extremo negativo
+	glVertex3f(0.0f, 0.0f, 0.0f);   
+	glVertex3f(0.0f, 0.0f, -distance);
 
 	glEnd();
-
-	glutSwapBuffers();
-
+	glFlush;
 }
 
 void Example::DrawGrids(GLfloat LineWidth)
 {
 	//std::cout << "DrawGrid" << std::endl;
 	glLineWidth(LineWidth);
-	//glColor3f(5.0f, 2.0f, 4.0f);
+	glColor3f(5.0f, 2.0f, 4.0f);
 	glBegin(GL_LINES);
 
 	//Dibujar líneas en el plano XZ
@@ -71,7 +62,7 @@ void Example::DrawGrids(GLfloat LineWidth)
 	}
 
 	glEnd();
-
+	glFlush;
 	glutSwapBuffers();
 
 }
