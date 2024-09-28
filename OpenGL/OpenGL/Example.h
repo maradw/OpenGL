@@ -10,7 +10,7 @@ public:
 	virtual void KeyboardFunc(unsigned char key, int X, int Y) = 0;
 	virtual void Idle() = 0;
 
-	void DrawAxis(float distance);
-	void DrawGrids();
+	void DrawAxis(float distance, float axisWidth);
+	void DrawGrids(float lineWidth);
 };
 

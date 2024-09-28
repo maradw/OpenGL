@@ -1,7 +1,8 @@
 #include "Example3.h"
+#include "IncludeGL.h"
 #include <GL/glut.h>
 #include <iostream>
-#include "IncludeGL.h"
+//
 
 //#include <iostream>
 //#include <cmath>
@@ -20,7 +21,19 @@ void Example3::init()
 void Example3::Render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    DrawAxis(80);
+    DrawAxis(10,8);
+    DrawGrids(5);
+    camera->Update();
+
+    glFlush();
+
+}
+void Example3::KeyboardFunc(unsigned char key, int x, int y) 
+{
+    
+}
+void Example3::Idle()
+{
 
 }
 /*

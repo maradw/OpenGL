@@ -1,4 +1,5 @@
 #pragma once
+#include "IncludeGL.h"
 class TextureLoader
 {
 protected:

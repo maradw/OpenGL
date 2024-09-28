@@ -6,37 +6,57 @@ Example::Example()
 {
 }
 
-void Example::DrawAxis(GLfloat distance)
+void Example::DrawAxis(GLfloat distance, GLfloat axisWidth)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glLineWidth(8.0);
+	glLineWidth(axisWidth);
+	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	
 	glBegin(GL_LINES);
-	//GLfloat distance = 50;
-	//Eje X
+
+	// Eje X
+	// Parte positiva (color rojo)
 	glColor3f(1.0f, 0.0f, 0.0f);
-	glVertex3f(-distance, 0.0f, 0.0f);
-	glVertex3f(distance, 0.0f, 0.0f);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(distance, 0.0f, 0.0f); // Extremo positivo
 
-	//Eje Y
+	// Parte negativa (color cian)
+	glColor3f(0.0f, 1.0f, 1.0f);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(-distance, 0.0f, 0.0f); // Extremo negativo
+
+	// Eje Y
+	// Parte positiva (color verde)
 	glColor3f(0.0f, 1.0f, 0.0f);
-	glVertex3f(0.0f, -distance, 0.0f);
-	glVertex3f(0.0f, distance, 0.0f);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(0.0f, distance, 0.0f); // Extremo positivo
 
-	//Eje Z
+	// Parte negativa (color morado)
+	glColor3f(1.0f, 0.0f, 1.0f);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(0.0f, -distance, 0.0f); // Extremo negativo
+
+	// Eje Z
+	// Parte positiva (color azul)
 	glColor3f(0.0f, 0.0f, 1.0f);
-	glVertex3f(0.0f, 0.0f, -distance);
-	glVertex3f(0.0f, 0.0f, distance);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(0.0f, 0.0f, distance); // Extremo positivo
+
+	// Parte negativa (color amarillo)
+	glColor3f(1.0f, 1.0f, 0.0f);
+	glVertex3f(0.0f, 0.0f, 0.0f);   // Origen
+	glVertex3f(0.0f, 0.0f, -distance); // Extremo negativo
 
 	glEnd();
 
 	glutSwapBuffers();
+
 }
 
-void Example::DrawGrids()
+void Example::DrawGrids(GLfloat LineWidth)
 {
 	//std::cout << "DrawGrid" << std::endl;
-	glLineWidth(3.0);
-	glColor3f(5.0f, 2.0f, 4.0f);
+	glLineWidth(LineWidth);
+	//glColor3f(5.0f, 2.0f, 4.0f);
 	glBegin(GL_LINES);
 
 	//Dibujar líneas en el plano XZ
