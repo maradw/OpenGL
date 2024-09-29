@@ -111,6 +111,9 @@
     <ClCompile Include="Vector3.cpp">
       <Filter>Archivos de origen\Math</Filter>
     </ClCompile>
+    <ClCompile Include="Example3_1.cpp">
+      <Filter>Archivos de origen\Example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -165,6 +168,9 @@
       <Filter>Archivos de encabezado\Math</Filter>
     </ClInclude>
     <ClInclude Include="Example5.h">
+      <Filter>Archivos de encabezado\Example</Filter>
+    </ClInclude>
+    <ClInclude Include="Example3_1.h">
       <Filter>Archivos de encabezado\Example</Filter>
     </ClInclude>
   </ItemGroup>

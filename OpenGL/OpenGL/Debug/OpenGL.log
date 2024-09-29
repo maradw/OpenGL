@@ -1,2 +1,48 @@
-﻿  Example3.cpp
-  OpenGL.vcxproj -> C:\Users\AMD Ryzen\Desktop\a\OpenGL\OpenGL\Debug\OpenGL.exe
+﻿  BMPTextureLoader.cpp
+  Camera.cpp
+  DirectionLight.cpp
+  Example.cpp
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example.cpp(43,2): warning C4551: la llamada a la función no tiene lista de argumentos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example.cpp(65,2): warning C4551: la llamada a la función no tiene lista de argumentos
+  Example1.cpp
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(84,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(116,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(149,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(158,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(167,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(176,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(185,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(194,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(207,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(216,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(234,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(261,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(273,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(346,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(364,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(370,26): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example1.cpp(448,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Example2.cpp
+  Example3.cpp
+  Example3_1.cpp
+  Example4.cpp
+  Example5.cpp
+  Lights.cpp
+  OpenGL.cpp
+  PointLight.cpp
+  Polígono.cpp
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(32,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(32,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(32,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(86,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(86,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(86,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(102,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(102,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Polígono.cpp(102,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+  Punto3D.cpp
+  SpotLight.cpp
+  TextureLoader.cpp
+  Vector3.cpp
+  Generando código...
+  OpenGL.vcxproj -> C:\Users\Maria\Desktop\OpenGl\OpenGL\Debug\OpenGL.exe

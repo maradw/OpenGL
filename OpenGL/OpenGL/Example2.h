@@ -9,12 +9,12 @@ public:
 	
 	virtual void Render()override;
 	virtual void KeyboardFunc(unsigned char key, int X, int Y)override;
-	void Figures(unsigned char key);
+	//void Figures(unsigned char key);
 	virtual void Idle()override;
 
 	void DrawPoint();
 	void XY();
-	void Grid();
+	//void Grid();
 	void DrawLine();
 };
 

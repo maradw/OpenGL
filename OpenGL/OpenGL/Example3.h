@@ -4,8 +4,14 @@
 #include "Polígono.h"
 class Example3 : public Example
 {
-	Camera* camera;
+private:
+	Camera* camera; // Puntero a la instancia de la Cámara
 	Polígono* polygon;
+public:
+	Example3(Camera* _camera) : camera(_camera) {}
+	Example3(Polígono* _polygon) : polygon(_polygon) {}
+	//Camera* camera;
+	//Polígono* polygon;
 public:
 	Example3();
 
