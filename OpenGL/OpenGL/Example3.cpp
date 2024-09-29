@@ -42,7 +42,7 @@ void Example3::Render()
     polygon->DrawCone(3, 0, -7);
 
     glutSwapBuffers();
-    //glFlush();
+    //glFslush();
 
 }
 void Example3::KeyboardFunc(unsigned char key, int x, int y) 
