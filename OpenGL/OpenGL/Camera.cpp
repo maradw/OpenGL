@@ -1,84 +1,73 @@
 #include "Camera.h"
 #include "IncludeGL.h"
+#include <cmath>
 
-/*Vector3 position; // Posición de la cámara
-Vector3 direction; // Dirección en la que mira
-float speed;*/
-Camera::Camera()
+Camera::Camera() : speed(0.1f), sensitivity(0.05f)
 {
 }
+
 void Camera::SetPosition(Vector3 _position)
 {
     position = _position;
 }
+
 Vector3 Camera::GetPosition()
 {
     return position;
 }
-void Camera::SetDirection(Vector3 _direction)
-{
-    direction = _direction;
-}
-Vector3 Camera::GetDirection()
-{
-    return Vector3();
-}
+
 void Camera::Init()
 {
-   
+    position = Vector3(0, 0, 5);  // Posición inicial
+    forward = Vector3(0, 0, -1);   // Mirando hacia el eje -Z
+    up = Vector3(0, 1, 0);         // Vector "up" hacia el eje Y
 }
+
 void Camera::Update()
 {
-   // glLoadIdentity();
-   // glClearDepth(1.0);
-    /*gluLookAt(position.x,
-        position.y,
-        position.z,
-        direction.x,
-        direction.y,
-        direction.z,
-        0, 1, 0);*/
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity(); // Reiniciar la matriz de vista
 
-    gluLookAt(position.x,
-        position.y,
-        position.z,
-        0,
-        0,
-        0,
-        0, 1, 0);
-    //glMatrixMode(GL_MODELVIEW);
-
-}
-/*void MoveForward() {
-    position.x += direction.x * speed;
-    position.z += direction.z * speed;
+    Vector3 target = position + forward;
+    gluLookAt(position.x, position.y, position.z,
+        target.x, target.y, target.z,
+        up.x, up.y, up.z);
 }
 
-void MoveBackward() {
-    position.x -= direction.x * speed;
-    position.z -= direction.z * speed;
-}
 
-void StrafeLeft() {
-    position.x -= direction.z * speed; // Mover a la izquierda
-    position.z += direction.x * speed; // Ajustar la dirección
-}
-
-void StrafeRight() {
-    position.x += direction.z * speed; // Mover a la derecha
-    position.z -= direction.x * speed; // Ajustar la dirección
-}
-
-void Rotate(float angle) {
-    // Rotación en el plano XZ
-    direction.x = cos(angle);
-    direction.z = sin(angle);
-}*/
-void Camera::LookAt(Vector3)
+void Camera::MoveForward()
 {
+    position = position + forward * speed;
 }
 
-void Camera::KeyboardFunc(unsigned char key, int X, int Y)
+void Camera::MoveBackward()
 {
-   // direction.print();
+    position = position - forward * speed;
+}
+
+void Camera::StrafeLeft()
+{
+    Vector3 right = forward.Cross(up).Normalize();
+    position = position - right * speed;
+}
+
+void Camera::StrafeRight()
+{
+    Vector3 right = forward.Cross(up).Normalize();
+    position = position + right * speed;
+}
+
+void Camera::Rotate(float angleX, float angleY)
+{
+    // Rotación horizontal (Yaw)
+    float yaw = angleX * sensitivity;
+    forward.x = cos(yaw) * forward.x - sin(yaw) * forward.z;
+    forward.z = sin(yaw) * forward.x + cos(yaw) * forward.z;
+
+    // Rotación vertical (Pitch)
+    float pitch = angleY * sensitivity;
+    forward.y += pitch;
+
+    // Normalizar la dirección "forward" después de la rotación
+    forward.Normalize();
 }

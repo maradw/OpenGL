@@ -1,19 +1,23 @@
 #pragma once
 #include "Vector3.h"
+
 class Camera
 {
 private:
-	Vector3 position;
-	Vector3 direction;
+    Vector3 position;    // Posición de la cámara
+    Vector3 forward;     // Dirección a la que apunta la cámara
+    Vector3 up;          // Vector "up" para la orientación de la cámara
+    float speed;         // Velocidad de movimiento
+    float sensitivity;   // Sensibilidad para rotaciones
 public:
-	Camera();
-	void SetPosition(Vector3);
-	Vector3 GetPosition();
-	void SetDirection(Vector3);
-	Vector3 GetDirection();
-	void Init();
-	void Update();
-	void LookAt(Vector3);
-	void KeyboardFunc(unsigned char key, int X, int Y);
+    Camera();
+    void SetPosition(Vector3);
+    Vector3 GetPosition();
+    void Init();
+    void Update();
+    void MoveForward();
+    void MoveBackward();
+    void StrafeLeft();
+    void StrafeRight();
+    void Rotate(float angleX, float angleY);
 };
-

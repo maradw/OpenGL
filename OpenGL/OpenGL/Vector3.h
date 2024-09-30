@@ -1,68 +1,45 @@
 #pragma once
-#include <iostream>
 #include <cmath>
+
 class Vector3
 {
 public:
-    float x, y, z; // Componentes del vector
+    float x, y, z;
 
-    // Constructor por defecto
     Vector3() : x(0), y(0), z(0) {}
+    Vector3(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}
 
-    // Constructor con parámetros
-    Vector3(float x, float y, float z) : x(x), y(y), z(z) {}
-
-    // Sobrecarga del operador +
-    Vector3 operator+(const Vector3& v) const {
-        return Vector3(x + v.x, y + v.y, z + v.z);
-    }
-
-    // Sobrecarga del operador -
-    Vector3 operator-(const Vector3& v) const {
-        return Vector3(x - v.x, y - v.y, z - v.z);
-    }
-
-    // Sobrecarga del operador * (Producto entre vectores - producto cruz)
-    Vector3 operator*(const Vector3& v) const {
-        return Vector3(x * v.x, y * v.y, z * v.z);
-    }
-
-    // Sobrecarga del operador * para multiplicación por un escalar
-    Vector3 operator*(float scalar) const {
-        return Vector3(x * scalar, y * scalar, z * scalar);
-    }
-
-    // Sobrecarga del operador / para dividir por un escalar
-    Vector3 operator/(float scalar) const {
-        return Vector3(x / scalar, y / scalar, z / scalar);
-    }
-
-    // Función para calcular la magnitud del vector
-    float magnitude() const {
-        return std::sqrt(x * x + y * y + z * z);
-    }
-
-    // Función para normalizar el vector
-    Vector3 normalize() const {
-        float mag = magnitude();
-        if (mag > 0) {
-            return Vector3(x / mag, y / mag, z / mag);
-        }
-        return Vector3(0, 0, 0); // Devuelve un vector nulo si la magnitud es 0
-    }
-
-    // Imprimir el vector
-    void print() const {
-        std::cout << "Vector3(" << x << ", " << y << ", " << z << ")" << std::endl;
-    }
-
-    // Función para calcular el producto cruzado entre dos vectores
-    Vector3 cross(const Vector3& v) const {
+    // Producto cruzado
+    Vector3 Cross(const Vector3& other) const
+    {
         return Vector3(
-            y * v.z - z * v.y,
-            z * v.x - x * v.z,
-            x * v.y - y * v.x
+            y * other.z - z * other.y,
+            z * other.x - x * other.z,
+            x * other.y - y * other.x
         );
     }
-};
 
+    // Normalizar vector
+    Vector3 Normalize() const
+    {
+        float length = sqrt(x * x + y * y + z * z);
+        if (length == 0) return Vector3(0, 0, 0);
+        return Vector3(x / length, y / length, z / length);
+    }
+
+    // Sobrecarga de operadores para sumar, restar y multiplicar por un escalar
+    Vector3 operator+(const Vector3& other) const
+    {
+        return Vector3(x + other.x, y + other.y, z + other.z);
+    }
+
+    Vector3 operator-(const Vector3& other) const
+    {
+        return Vector3(x - other.x, y - other.y, z - other.z);
+    }
+
+    Vector3 operator*(float scalar) const
+    {
+        return Vector3(x * scalar, y * scalar, z * scalar);
+    }
+};
