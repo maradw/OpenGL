@@ -24,12 +24,12 @@ void Polígono::Render()
 
 void Polígono::KeyboardFunc(unsigned char key, int x, int y)
 {
-    //
+   
 }
-void Polígono::DrawCube(int x,int y, int z)
+void Polígono::DrawCube(int a,int b, int c)
 {
 	glLineWidth(8.0);
-	glTranslatef(x, y, z);
+	glTranslatef(a, b, c);
 	//glClear(GL_COLOR_BUFFER_BIT);
 
 	glBegin(GL_QUADS);
@@ -82,7 +82,7 @@ void Polígono::DrawCube(int x,int y, int z)
 void Polígono::DrawSphere(int x, int y, int z)
 {
 	GLUquadricObj* quadric = gluNewQuadric();
-	glScalef(1.5f, 1.5f, 1.5f);
+	glScalef(1.0f, 1.0f, 1.0f);
 	glTranslatef(x, y, z);
 	glColor3f(0.0, 0.5, 1.0); // Color azul claro
 
@@ -101,7 +101,9 @@ void Polígono::DrawCone(int x, int y, int z)
 	glScalef(1.5f, 1.5f, 1.5f);
 	glTranslatef(x, y, z);
 	// Configuración del cono
-	glColor3f(1.0, 0.0, 0.0); // Color rojo brillante
+	glColor3f(0.0f, 1.0f, 1.0f);
+
+
 
 							  // Dibujar el cono
 	gluCylinder(quadric, 1.0, 0.0, 2.0, 32, 32); // Radio superior, radio inferior (0 para cono), altura, slices, stacks
@@ -109,4 +111,139 @@ void Polígono::DrawCone(int x, int y, int z)
 												 // Limpiar el objeto quadric
 	gluDeleteQuadric(quadric);
 	glFlush();
+}
+void Polígono::DrawOrthohedron(int x, int y, int z)
+{
+	glColor3f(0.5, 0.2, 0.8); // Morado
+	glTranslatef(x, y, z);
+	glBegin(GL_POLYGON);
+	glVertex3f(-1.0, 1.0, -0.5);
+	glVertex3f(1.5, 1.0, -0.5);
+	glVertex3f(1.5, 1.0, 0.5);
+	glVertex3f(-1.0, 1.0, 0.5);
+	glEnd();
+
+	// Base inferior (rectángulo)
+	glColor3f(0.2, 0.8, 0.5); // Verde claro
+	glBegin(GL_POLYGON);
+	glVertex3f(-1.0, -1.0, -0.5);
+	glVertex3f(1.5, -1.0, -0.5);
+	glVertex3f(1.5, -1.0, 0.5);
+	glVertex3f(-1.0, -1.0, 0.5);
+	glEnd();
+
+	// Cara frontal
+	glColor3f(1.0, 0.5, 0.0); // Naranja
+	glBegin(GL_POLYGON);
+	glVertex3f(-1.0, 1.0, -0.5); // Vértice superior izquierdo
+	glVertex3f(1.5, 1.0, -0.5); // Vértice superior derecho
+	glVertex3f(1.5, -1.0, -0.5); // Vértice inferior derecho
+	glVertex3f(-1.0, -1.0, -0.5); // Vértice inferior izquierdo
+	glEnd();
+
+	// Cara derecha
+	glColor3f(0.0, 0.7, 1.0); // Azul celeste
+	glBegin(GL_POLYGON);
+	glVertex3f(1.5, 1.0, -0.5); // Vértice superior izquierdo
+	glVertex3f(1.5, 1.0, 0.5); // Vértice superior derecho
+	glVertex3f(1.5, -1.0, 0.5); // Vértice inferior derecho
+	glVertex3f(1.5, -1.0, -0.5); // Vértice inferior izquierdo
+	glEnd();
+
+	// Cara trasera
+	glColor3f(1.0, 0.0, 0.0); // Rojo
+	glBegin(GL_POLYGON);
+	glVertex3f(1.5, 1.0, 0.5); // Vértice superior derecho
+	glVertex3f(-1.0, 1.0, 0.5); // Vértice superior izquierdo
+	glVertex3f(-1.0, -1.0, 0.5); // Vértice inferior izquierdo
+	glVertex3f(1.5, -1.0, 0.5); // Vértice inferior derecho
+	glEnd();
+
+	// Cara izquierda
+	glColor3f(0.5, 1.0, 0.5); // Verde pastel
+	glBegin(GL_POLYGON);
+	glVertex3f(-1.0, 1.0, 0.5); // Vértice superior derecho
+	glVertex3f(-1.0, 1.0, -0.5); // Vértice superior izquierdo
+	glVertex3f(-1.0, -1.0, -0.5); // Vértice inferior izquierdo
+	glVertex3f(-1.0, -1.0, 0.5); // Vértice inferior derecho
+	glEnd();
+
+	// Cara inferior
+	glColor3f(0.8, 0.8, 0.0); // Amarillo pastel
+	glBegin(GL_POLYGON);
+	glVertex3f(-1.0, -1.0, -0.5); // Vértice inferior izquierdo
+	glVertex3f(1.5, -1.0, -0.5); // Vértice inferior derecho
+	glVertex3f(1.5, -1.0, 0.5); // Vértice superior derecho
+	glVertex3f(-1.0, -1.0, 0.5); // Vértice superior izquierdo
+	glEnd();
+	glFlush();
+}
+void Polígono::DrawPiramid(int x, int y, int z)
+{
+	glTranslatef(x, y, z);
+	glLineWidth(8.0);
+
+	// Aplicar la escala para reducir el tamaño de la pirámide
+	glScalef(0.5f, 0.5f, 0.5f); // Reduce la pirámide al 50% de su tamaño original
+
+	glBegin(GL_TRIANGLES); // Usar triángulos para las caras de la pirámide
+
+	// Cara frontal
+	glColor3f(1.0, 0.0, 0.0); // Rojo
+	glVertex3f(0.0, 1.0, 0.0); // Vértice superior
+	glVertex3f(-1.0, -1.0, 1.0); // Vértice inferior izquierdo
+	glVertex3f(1.0, -1.0, 1.0); // Vértice inferior derecho
+
+	// Cara derecha
+	glColor3f(0.0, 1.0, 0.0); // Verde
+	glVertex3f(0.0, 1.0, 0.0); // Vértice superior
+	glVertex3f(1.0, -1.0, 1.0); // Vértice inferior derecho
+	glVertex3f(1.0, -1.0, -1.0); // Vértice inferior trasero derecho
+
+	// Cara trasera
+	glColor3f(0.0, 0.0, 1.0); // Azul
+	glVertex3f(0.0, 1.0, 0.0); // Vértice superior
+	glVertex3f(1.0, -1.0, -1.0); // Vértice inferior derecho
+	glVertex3f(-1.0, -1.0, -1.0); // Vértice inferior izquierdo
+
+	// Cara izquierda
+	glColor3f(1.0, 1.0, 0.0); // Amarillo
+	glVertex3f(0.0, 1.0, 0.0); // Vértice superior
+	glVertex3f(-1.0, -1.0, -1.0); // Vértice inferior izquierdo
+	glVertex3f(-1.0, -1.0, 1.0); // Vértice inferior izquierdo
+
+	// Base de la pirámide
+	glColor3f(0.5, 0.5, 0.5); // Gris
+	glVertex3f(-1.0, -1.0, 1.0); // Vértice inferior izquierdo (frontal izquierdo)
+	glVertex3f(1.0, -1.0, 1.0); // Vértice inferior derecho (frontal derecho)
+	glVertex3f(1.0, -1.0, -1.0); // Vértice inferior derecho (trasero derecho)
+	glVertex3f(-1.0, -1.0, -1.0); // Vértice inferior izquierdo (trasero izquierdo)
+
+	glEnd();
+	glFlush();
+}
+void Polígono::DrawFrustum(int x, int y, int z)
+{
+	// Crear un objeto de cilindro con GLU
+	glTranslatef(x, y, z);
+	GLUquadricObj* quadric = gluNewQuadric();
+
+	// Configuración del tronco de cono
+	glColor3f(0.0, 0.8, 0.8); // Color marrón claro
+
+							  // Dibujar el tronco de cono
+	gluCylinder(quadric, 1.0, 0.5, 2.0, 32, 32); // Radio superior, radio inferior, altura, slices, stacks
+
+												 // Limpiar el objeto quadric
+	gluDeleteQuadric(quadric);
+	glFlush();
+}
+void Polígono::DrawIcosahedron(int x, int y, int z)
+{
+	glTranslatef(x, y, z);
+	glLineWidth(8.0);
+	glScalef(1.0f, 1.0f, 1.0f);
+	glColor3f(0.7, 0.4, 0.2);
+	glutSolidIcosahedron();
+	glutSwapBuffers();
 }

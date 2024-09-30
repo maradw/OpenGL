@@ -13,24 +13,24 @@ void Example3::init()
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClearDepth(1.0);
-    glEnable(GL_DEPTH_TEST); // Habilitar el buffer de profundidad para la correcta renderización 3D
+    glEnable(GL_DEPTH_TEST); 
     camera->Init();
     glMatrixMode(GL_MODELVIEW);
-    camera->SetPosition(Vector3(5, 2, 5));
-    //camera->SetDirection(Vector3(0, 0, -1));
+    camera->SetPosition(Vector3(0, 2, 8));
+   
 }
+
+//camera->SetDirection(Vector3(0, 0, -1));
 
 void Example3::Render()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Limpiar color y profundidad
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     camera->Update();
     DrawAxis(30, 2);
     DrawGrids(1);
-
-    polygon->DrawCube(5, 0, -5);
-    polygon->DrawSphere(-5, 0, 5);
-    polygon->DrawCone(3, 0, -7);
-
+    polygon->DrawCube(-1, 1, 1);
+    polygon->DrawPiramid(2, 1, 1);
+    polygon->DrawIcosahedron(4, 1, 1);
     glutSwapBuffers();
 }
 
@@ -50,11 +50,24 @@ void Example3::KeyboardFunc(unsigned char key, int x, int y)
     case 'd':
         camera->StrafeRight();
         break;
+    case 'z':
+        camera->Rotate(-1.0f, 0.0f); 
+        break;
+    case 'x':
+        camera->Rotate(1.0f, 0.0f); 
+        break;
+    case 'c':
+        camera->Rotate(0.0f, -1.0f);
+        break;
+    case 'v':
+        camera->Rotate(0.0f, 1.0f);
+        break;
     }
+
     glutPostRedisplay();
 }
 
-void Example3::SpecialFunc(int key, int x, int y)
+/*void Example3::SpecialFunc(int key, int x, int y)
 {
     switch (key)
     {
@@ -72,7 +85,7 @@ void Example3::SpecialFunc(int key, int x, int y)
         break;
     }
     glutPostRedisplay();
-}
+}*/
 
 void Example3::Idle()
 {

@@ -18,9 +18,9 @@ Vector3 Camera::GetPosition()
 
 void Camera::Init()
 {
-    position = Vector3(0, 0, 5);  // Posición inicial
-    forward = Vector3(0, 0, -1);   // Mirando hacia el eje -Z
-    up = Vector3(0, 1, 0);         // Vector "up" hacia el eje Y
+    position = Vector3(5, 0, 5); 
+    forward = Vector3(0, 0, -1); 
+    up = Vector3(0, 1, 0);        
 }
 
 void Camera::Update()
@@ -67,7 +67,5 @@ void Camera::Rotate(float angleX, float angleY)
     // Rotación vertical (Pitch)
     float pitch = angleY * sensitivity;
     forward.y += pitch;
-
-    // Normalizar la dirección "forward" después de la rotación
     forward.Normalize();
 }
