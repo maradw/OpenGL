@@ -2,10 +2,15 @@
 #include "IncludeGL.h"
 #include <iostream>
 
-Polígono::Polígono()
+Vector3 position;
+Polígono::Polígono(): position(0.0f, 0.0f, 0.0f)
 {
    
 }
+/*Polígono::Polígono() : position(0.0f, 0.0f, 0.0f) // Posición inicial
+{
+}
+*/
 void Polígono::init()
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -27,10 +32,13 @@ void Polígono::KeyboardFunc(unsigned char key, int x, int y)
 {
    
 }
-void Polígono::DrawCube(/*int a, int b, int c*/)
+void Polígono::DrawCube(int a, int b, int c)
 {
 	glLineWidth(8.0);
-	glTranslatef(position.x, position.y, position.z);
+	glPushMatrix();
+	glTranslatef(a,b,c);
+	 // Evita afectar otras partes de la escena
+	
 	//glClear(GL_COLOR_BUFFER_BIT);
 
 	glBegin(GL_QUADS);
@@ -76,7 +84,7 @@ void Polígono::DrawCube(/*int a, int b, int c*/)
 	glVertex3f(0.5, -0.5, -0.5);
 	glVertex3f(0.5, -0.5, 0.5);
 	glVertex3f(-0.5, -0.5, 0.5);
-
+	glPopMatrix();
 	glEnd();
 	glFlush();
 }
@@ -249,7 +257,7 @@ void Polígono::DrawIcosahedron(int x, int y, int z)
 	glutSwapBuffers();
 }
 
-void Polígono::MoveForward() {
+/*void Polígono::MoveForward() {
 	position.z += 0.1f; // Mover hacia adelante en el eje Z
 }
 
@@ -264,6 +272,6 @@ void Polígono::StrafeLeft() {
 void Polígono::StrafeRight() {
 	position.x += 0.1f; // Mover a la derecha en el eje X
 }
-
+*/
 
 
