@@ -16,8 +16,10 @@ void Render()
 void KeyboardFunc(unsigned char key, int X, int Y )
 {
 	((Example3*)_Example)->KeyboardFunc(key,  X,  Y);
+//	((Example3*)_Example)->TPSKeyboardFunc(key, X, Y);
 	glutPostRedisplay(); 
 }
+
 void reSize(GLsizei width, GLsizei height) {  // GLsizei for non-negative integer
    // Compute aspect ratio of the new window
 	if (height == 0) height = 1;                // To prevent divide by 0

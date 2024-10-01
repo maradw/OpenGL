@@ -1,56 +1,40 @@
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\vc142.pdb
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\vc142.idb
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\vector3.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\textureloader.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\spotlight.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\punto3d.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\polígono.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\pointlight.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\opengl.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\lights.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example5.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example4.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example3.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example2.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example1.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\example.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\directionlight.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\camera.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\bmptextureloader.obj
-c:\users\amd ryzen\desktop\a\opengl\opengl\debug\opengl.exe
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\opengl.ilk
-c:\users\amd ryzen\desktop\a\opengl\opengl\debug\opengl.pdb
-c:\users\amd ryzen\desktop\a\opengl\opengl\opengl\debug\opengl.res
-c:\users\maria\desktop\opengl\opengl\opengl\debug\bmptextureloader.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\camera.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\directionlight.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example1.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example2.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example3.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example4.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example5.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\lights.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\pointlight.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\polígono.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\punto3d.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\spotlight.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\textureloader.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\vector3.obj
-c:\users\maria\desktop\opengl\opengl\opengl\debug\example3.obj.enc
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.ilk
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.res
-c:\users\maria\desktop\opengl\opengl\opengl\debug\vc142.idb
-c:\users\maria\desktop\opengl\opengl\opengl\debug\vc142.pdb
-c:\users\maria\desktop\opengl\opengl\debug\opengl.pdb
-c:\users\maria\desktop\opengl\opengl\debug\opengl.exe
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\cl.command.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\cl.read.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\cl.write.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\link.command.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\link.read.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\link.write.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\rc.command.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\rc.read.1.tlog
-c:\users\maria\desktop\opengl\opengl\opengl\debug\opengl.tlog\rc.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\vc142.pdb
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\vc142.idb
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\vector3.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\textureloader.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\spotlight.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\punto3d.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\polígono.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\pointlight.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\lights.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example5.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example4.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example3.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example2.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example1.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\example.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\directionlight.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\camera.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\bmptextureloader.obj
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.res
+c:\users\teamo\desktop\opengl\opengl\opengl\debug\opengl.pdb
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\cl.command.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\cl.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\cl.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link-cvtres.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link-cvtres.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link-rc.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link-rc.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880-cvtres.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880-cvtres.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880-rc.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880-rc.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.11880.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.command.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\link.write.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\rc.command.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\rc.read.1.tlog
+c:\users\teamo\desktop\opengl\opengl\opengl\opengl\debug\opengl.tlog\rc.write.1.tlog

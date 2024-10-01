@@ -1,2 +1,33 @@
-﻿  Example3.cpp
+﻿  Camera.cpp
+  Example3.cpp
+  OpenGL.cpp
+  Polígono.cpp
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(33,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(33,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(33,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(87,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(87,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(87,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(103,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(103,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(103,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(118,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(119,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(119,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(119,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(128,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(146,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(173,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(184,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(184,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(184,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(229,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(229,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(229,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(233,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(244,21): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(244,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(244,15): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\OpenGL\Polígono.cpp(247,25): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Generando código...
   OpenGL.vcxproj -> C:\Users\teamo\Desktop\opengl\OpenGL\OpenGL\Debug\OpenGL.exe

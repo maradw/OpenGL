@@ -16,19 +16,17 @@ void Example3::init()
     glEnable(GL_DEPTH_TEST); 
     camera->Init();
     glMatrixMode(GL_MODELVIEW);
+   //glutSpecialFunc(TPSKeyboardFunc);
     camera->SetPosition(Vector3(0, 2, 8));
-   
 }
-
 //camera->SetDirection(Vector3(0, 0, -1));
-
 void Example3::Render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     camera->Update();
     DrawAxis(30, 2);
     DrawGrids(1);
-    polygon->DrawCube(-1, 1, 1);
+   // polygon->DrawCube(-1, 1, 1);
     polygon->DrawPiramid(2, 1, 1);
     polygon->DrawIcosahedron(4, 1, 1);
     glutSwapBuffers();
@@ -67,10 +65,22 @@ void Example3::KeyboardFunc(unsigned char key, int x, int y)
     glutPostRedisplay();
 }
 
-/*void Example3::SpecialFunc(int key, int x, int y)
+void Example3::TPSKeyboardFunc(unsigned char key, int x, int y)
 {
     switch (key)
     {
+    case '1':
+        camera->MoveForward();
+        break;
+    case '2':
+        camera->MoveBackward();
+        break;
+    case '3':
+        camera->StrafeLeft();
+        break;
+    case '4':
+        camera->StrafeRight();
+        break;
     case GLUT_KEY_LEFT:
         camera->Rotate(-1.0f, 0.0f); // Rotar a la izquierda
         break;
@@ -85,7 +95,7 @@ void Example3::KeyboardFunc(unsigned char key, int x, int y)
         break;
     }
     glutPostRedisplay();
-}*/
+}
 
 void Example3::Idle()
 {

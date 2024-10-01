@@ -26,7 +26,7 @@ void Camera::Init()
 void Camera::Update()
 {
     glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity(); // Reiniciar la matriz de vista
+    glLoadIdentity(); 
 
     Vector3 target = position + forward;
     gluLookAt(position.x, position.y, position.z,

@@ -12,7 +12,7 @@ public:
     virtual void init() override;
     virtual void Render() override;
     virtual void KeyboardFunc(unsigned char key, int X, int Y) override;
-   // virtual void SpecialFunc(int key, int X, int Y); // Teclas especiales (flechas)
+    virtual void TPSKeyboardFunc(unsigned char key, int x, int y); // Teclas especiales (flechas)
     virtual void Idle() override;
 };
 

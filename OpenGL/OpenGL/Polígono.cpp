@@ -1,6 +1,7 @@
 #include "Polígono.h"
 #include "IncludeGL.h"
 #include <iostream>
+
 Polígono::Polígono()
 {
    
@@ -26,10 +27,10 @@ void Polígono::KeyboardFunc(unsigned char key, int x, int y)
 {
    
 }
-void Polígono::DrawCube(int a,int b, int c)
+void Polígono::DrawCube(/*int a, int b, int c*/)
 {
 	glLineWidth(8.0);
-	glTranslatef(a, b, c);
+	glTranslatef(position.x, position.y, position.z);
 	//glClear(GL_COLOR_BUFFER_BIT);
 
 	glBegin(GL_QUADS);
@@ -247,3 +248,22 @@ void Polígono::DrawIcosahedron(int x, int y, int z)
 	glutSolidIcosahedron();
 	glutSwapBuffers();
 }
+
+void Polígono::MoveForward() {
+	position.z += 0.1f; // Mover hacia adelante en el eje Z
+}
+
+void Polígono::MoveBackward() {
+	position.z -= 0.1f; // Mover hacia atrás en el eje Z
+}
+
+void Polígono::StrafeLeft() {
+	position.x -= 0.1f; // Mover a la izquierda en el eje X
+}
+
+void Polígono::StrafeRight() {
+	position.x += 0.1f; // Mover a la derecha en el eje X
+}
+
+
+
