@@ -1,6 +1,2 @@
-﻿  Example3.cpp
-C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example3.cpp(43,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example3.cpp(43,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example3.cpp(43,23): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Maria\Desktop\OpenGl\OpenGL\OpenGL\Example3.cpp(169,5): warning C4060: la instrucción switch no contiene etiquetas 'case' ni 'default'
+﻿  Camera.cpp
   OpenGL.vcxproj -> C:\Users\Maria\Desktop\OpenGl\OpenGL\Debug\OpenGL.exe

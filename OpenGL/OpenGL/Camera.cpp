@@ -34,6 +34,16 @@ void Camera::Update()
         up.x, up.y, up.z);
 }
 
+void Camera::LookAt(Vector3 target, float distance)
+{
+    // Calcula la dirección hacia el cubo
+    forward = (target - position).Normalize();
+
+    // Reposiciona la cámara a una distancia fija
+    position = target - forward * distance;
+
+    Update();
+}
 
 void Camera::MoveForward()
 {

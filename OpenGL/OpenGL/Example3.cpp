@@ -6,6 +6,7 @@
 
 float transX = 0.0f;
 float transY = 0.0f;
+float transZ = 0.0f;
 float rotAngle = 0.0f;
 
 Example3::Example3() : objectPosition(0, 0, 0)
@@ -19,11 +20,13 @@ void Example3::init()
     glEnable(GL_DEPTH_TEST); 
     camera->Init();
     glMatrixMode(GL_MODELVIEW);
-    camera->SetPosition(Vector3(0, 2, 8));
+   //camera->SetPosition(Vector3(0, 2, 8));
+   //camera->LookAt(Vector3(transX, transY, transZ),5.0f);
 }
 void Example3::Render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    camera->LookAt(Vector3(transX, transY, transZ), 5.0f);
     camera->Update();
     DrawAxis(30, 2);
     DrawGrids(1);
@@ -31,8 +34,8 @@ void Example3::Render()
     polygon->DrawPiramid(2, 1, 1);
     polygon->DrawIcosahedron(4, 1, 1);
     glRotatef(rotAngle, 0.0f, 0.0f, 1.0f);
-    glTranslatef(transX, transY, 0.0f);  // Aplica la traslación al cubo
-    polygon->DrawCube(transX, transY, 0.0f);
+    glTranslatef(transX, transY, transZ);  // Aplica la traslación al cubo
+    polygon->DrawCube(transX, transY, transZ);
 
     glutSwapBuffers();
 }
@@ -65,13 +68,13 @@ void Example3::KeyboardFunc(unsigned char key, int x, int y)
     case 'v':
         camera->Rotate(0.0f, 1.0f);
         break;
-    case 'i':
-        std::cout << "Mover hacia arriba " << key << std::endl;
-        transY += 0.1f;
-        break;
     case 'k':
-        std::cout << "Mover hacia abajo " << key << std::endl;
-        transY -= 0.1f;
+        std::cout << "Mover hacia atras " << key << std::endl;
+        transZ += 0.1f;
+        break;
+    case 'i':
+        std::cout << "Mover hacia adelante " << key << std::endl;
+        transZ -= 0.1f;
         break;
     case 'j':
         std::cout << "Mover hacia la izquierda " << key << std::endl;
@@ -84,6 +87,14 @@ void Example3::KeyboardFunc(unsigned char key, int x, int y)
     case 'p':
         std::cout << "Rotar hacia la derecha " << key << std::endl;
         rotAngle += 5.0f;
+        break;
+        case 't':
+        std::cout << "Mover hacia la arriba " << key << std::endl;
+        transY += 0.1f;
+        break;
+    case 'g':
+        std::cout << "Rotar hacia la izquierda " << key << std::endl;
+        transY -= 0.1f;
         break;
     
     }

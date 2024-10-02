@@ -15,6 +15,7 @@ public:
     Vector3 GetPosition();
     void Init();
     void Update();
+    void LookAt(Vector3 target, float distance);
     void MoveForward();
     void MoveBackward();
     void StrafeLeft();
