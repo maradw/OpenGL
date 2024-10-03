@@ -159,6 +159,9 @@
     <ClCompile Include="Figura.cpp">
       <Filter>Archivos de origen\Figura</Filter>
     </ClCompile>
+    <ClCompile Include="Example6.cpp">
+      <Filter>Archivos de origen\Example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -241,6 +244,9 @@
     </ClInclude>
     <ClInclude Include="Circulo.h">
       <Filter>Archivos de encabezado\Figura\Figura2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Example6.h">
+      <Filter>Archivos de encabezado\Example</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

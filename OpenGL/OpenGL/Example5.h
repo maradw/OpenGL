@@ -28,6 +28,7 @@ class Example5 :
 	public Example
 {
 	Figura* shape;
+	//Figura * 
 	Vector3 pos;
 	TextureLoader* _TextureLoader;
 	GLuint texture;

@@ -7,5 +7,6 @@ public:
     int radius;
     Esfera(const std::string& name, int w, float r, float g, float b);
     void CalculateVolume() override;  // Sobrescribe el cálculo de volumen
+    void Draw() override;
 };
 

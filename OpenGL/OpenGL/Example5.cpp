@@ -12,14 +12,14 @@ void Example5::init()
 	glClearDepth(1.0);
 	gluLookAt(5, 5, 5, 0, 0, 0, 0, 1, 0);
 	glMatrixMode(GL_MODELVIEW);
-	shape = new Cubo(2);
+	//shape = new Cubo(2);
 	_TextureLoader = new BMPTextureLoader();
 	texture = ((BMPTextureLoader*)_TextureLoader)->LoadBMP("./textures/wallBMP.bmp");
 }
 void Example5::Render()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	Example::DrawGrids();
+	Example::DrawGrids(1);
 	DrawShape();
 	glFlush();
 }
@@ -51,6 +51,7 @@ void Example5::KeyboardFunc(unsigned char key, int X, int Y)
 }
 void Example5::Idle()
 {
+
 }
 void Example5::DrawShape()
 {
@@ -67,6 +68,7 @@ void Example5::DrawShape()
 	glDisable(GL_TEXTURE_GEN_T);
 	glDisable(GL_TEXTURE_2D);
 	glutSwapBuffers(); //Se hace el cambio de buffer
+}
 /*#include "Example5.h"
 #include "IncludeGL.h"
 #include <iostream>
