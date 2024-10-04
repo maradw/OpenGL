@@ -3,12 +3,16 @@
 #include <GL/glut.h>
 #include <iostream>
 Figura::Figura(const std::string& name, int w, float r, float g, float b)
-    : nameF(name), width(w)  // Inicialización de nameF y width
+    : nameF(name), width(w) 
 {
     color[0] = r;  // Inicializa el color RGB como float
     color[1] = g;
     color[2] = b;
 }
+Figura::Figura() {
+
+}
+
 void Figura::init()
 {
     // PointLight pointLight;

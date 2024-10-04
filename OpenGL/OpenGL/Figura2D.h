@@ -3,7 +3,7 @@
 class Figura2D : public Figura
 {
 public: 
-	virtual void CalculateArea();
-	virtual void CalculatePerimeter();
+	virtual void CalculateArea() = 0;
+	virtual void CalculatePerimeter() = 0;
 };
 

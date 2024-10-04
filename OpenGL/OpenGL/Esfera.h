@@ -5,8 +5,10 @@ class Esfera :
 {
 public:
     int radius;
-    Esfera(const std::string& name, int w, float r, float g, float b);
+    Esfera();
+   // Esfera(const std::string& name, int w, float r, float g, float b);
     void CalculateVolume() override;  // Sobrescribe el cálculo de volumen
+    void init() override;
     void Draw() override;
 };
 

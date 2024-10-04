@@ -5,9 +5,10 @@ class Cubo :
     public Figura3D
 {
 public:
-    //Cuadrado quad;
-    Cubo(const std::string& name, int w, float r, float g, float b);
-    void CalculateVolume() override;  // Sobrescribe el cálculo de volumen
+    //Cubo(const std::string& name, int w, float r, float g, float b);
+    Cubo();
+    void init() override;
+    void CalculateVolume() override;  
     void Draw() override;
 };
 
