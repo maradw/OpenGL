@@ -27,10 +27,10 @@ void Esfera::Draw()
 	GLUquadricObj* quadric = gluNewQuadric();
 
 	// Configuración de la esfera
-	glColor3f(0.0, 0.5, 1.0); // Color azul claro
+	glColor3f(0.0, 0.0, 1.0); // Color azul claro
 
 							  // Dibuja la esfera
-	gluSphere(quadric, 1.0, 32, 32); // Radio, slices, stacks
+	gluSphere(quadric, 0.7, 32, 32); // Radio, slices, stacks
 
 									 // Limpiar el objeto quadric
 	gluDeleteQuadric(quadric);

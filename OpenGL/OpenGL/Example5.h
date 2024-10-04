@@ -3,8 +3,7 @@
 #include "Figura.h"
 #include "Vector3.h"
 #include "TextureLoader.h"
-class Example5 :
-	public Example
+class Example5 : public Example
 {
 	Figura* cubo;
 	Figura* esfera;

@@ -10,6 +10,6 @@ protected:
 public:
 	Figura(const std::string& name, int w, float r, float g, float b);
 	Figura();
-	virtual void init();
+	virtual void init() = 0;
 	virtual void Draw() = 0;
 };

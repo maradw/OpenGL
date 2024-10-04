@@ -12,6 +12,5 @@ Figura3D::Figura3D()
 }
 void Figura3D::CalculateVolume() {
     // Implementación genérica para el volumen
-    // Si es abstracta, podrías imprimir un mensaje para indicar que debe ser sobrescrita
-    std::cout << "Figura3D volume calculation not implemented!" << std::endl;
+   // std::cout << "Figura3D volume calculation not implemented!" << std::endl;
 }
