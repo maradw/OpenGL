@@ -32,22 +32,20 @@ void Example6::Render()
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     Example::DrawGrids(2);
     
-  
     for (int i = 0; i <= 2; i++)
     {
-        glPushMatrix();  // Guarda la matriz actual
-        glTranslatef(i * 2.0f, 0.0f, 0.0f);  // Mueve el cubo en el eje X en cada iteración
-        glCallList(cubeList);  // Llama al Display List del cubo
+        glPushMatrix();
+        glTranslatef(i * 2.0f, 0.0f, 0.0f);
+        glCallList(cubeList);
+
         glTranslatef(i * -4.0f, 0.0f, 0.0f);
         glCallList(sphereList);
+
         glTranslatef( -2.0f, i * 1.5f, -5.0f);
         glCallList(quadList);
-        glPopMatrix();  // Restaura la matriz original
+        glPopMatrix();
     }
-
     glutSwapBuffers();
-    
-
 }
 void Example6::KeyboardFunc(unsigned char key, int x, int y)
 {
@@ -55,7 +53,7 @@ void Example6::KeyboardFunc(unsigned char key, int x, int y)
 }
 void Example6::CreateSphereDisplayList() 
 {
-    sphereList = glGenLists(2);
+    sphereList = glGenLists(1);
     glNewList(sphereList, GL_COMPILE);
 
 
@@ -68,9 +66,7 @@ void Example6::CreateSphereDisplayList()
 }
 void Example6::CreateCubeDisplayList() 
 {
-    
-    // Generar un nuevo Display List
-    cubeList = glGenLists(3);
+    cubeList = glGenLists(1);
    glNewList(cubeList, GL_COMPILE);
   
  
@@ -83,7 +79,7 @@ void Example6::CreateCubeDisplayList()
 }
 void Example6::CreateQuadDisplayList()
 {
-    quadList = glGenLists(2);
+    quadList = glGenLists(1);
     glNewList(quadList, GL_COMPILE);
 
 
